@@ -1,0 +1,10 @@
+products_dict = {
+    "piekarnia": ["chleb", "bułki", "pączek"],
+    "warzywniak": ["marchew", "seler", "rukola"]
+}
+number_of_products = 0
+for shop, products in products_dict.items():
+    p = [product.capitalize() for product in products]
+    print(f"Idę do: {shop.capitalize()} i kupuje: {p}")
+    number_of_products = number_of_products + len(products)
+print(f"Lacznie kupilem: {number_of_products} ")
